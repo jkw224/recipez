@@ -13,6 +13,10 @@
 		FB2C210C1BAC6784006DDB43 /* recipez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB2C210A1BAC6784006DDB43 /* recipez.xcdatamodeld */; };
 		FB2C210E1BAC6784006DDB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2C210D1BAC6784006DDB43 /* Assets.xcassets */; };
 		FB2C21111BAC6784006DDB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2C210F1BAC6784006DDB43 /* LaunchScreen.storyboard */; };
+		FB2C211C1BAC748E006DDB43 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C211B1BAC748E006DDB43 /* RecipeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		FB2C21251BAC8236006DDB43 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C21231BAC8236006DDB43 /* Recipe+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		FB2C21261BAC8236006DDB43 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C21241BAC8236006DDB43 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		FB2C212C1BAC88B4006DDB43 /* AddRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2C212B1BAC88B4006DDB43 /* AddRecipeVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FB2C210D1BAC6784006DDB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2C21101BAC6784006DDB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2C21121BAC6784006DDB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2C211B1BAC748E006DDB43 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		FB2C21231BAC8236006DDB43 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FB2C21241BAC8236006DDB43 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		FB2C212B1BAC88B4006DDB43 /* AddRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		FB2C21021BAC6784006DDB43 /* recipez */ = {
 			isa = PBXGroup;
 			children = (
+				FB2C21191BAC7454006DDB43 /* model */,
+				FB2C211A1BAC745C006DDB43 /* view */,
+				FB2C21181BAC744E006DDB43 /* controller */,
 				FB2C21031BAC6784006DDB43 /* AppDelegate.swift */,
-				FB2C21051BAC6784006DDB43 /* ViewController.swift */,
 				FB2C21071BAC6784006DDB43 /* Main.storyboard */,
 				FB2C210D1BAC6784006DDB43 /* Assets.xcassets */,
 				FB2C210F1BAC6784006DDB43 /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				FB2C210A1BAC6784006DDB43 /* recipez.xcdatamodeld */,
 			);
 			path = recipez;
+			sourceTree = "<group>";
+		};
+		FB2C21181BAC744E006DDB43 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C21051BAC6784006DDB43 /* ViewController.swift */,
+				FB2C212B1BAC88B4006DDB43 /* AddRecipeVC.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		FB2C21191BAC7454006DDB43 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C21231BAC8236006DDB43 /* Recipe+CoreDataProperties.swift */,
+				FB2C21241BAC8236006DDB43 /* Recipe.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FB2C211A1BAC745C006DDB43 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C211B1BAC748E006DDB43 /* RecipeCell.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +129,7 @@
 		FB2C20F81BAC6784006DDB43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jonathan Wood";
 				TargetAttributes = {
@@ -137,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2C21251BAC8236006DDB43 /* Recipe+CoreDataProperties.swift in Sources */,
 				FB2C21061BAC6784006DDB43 /* ViewController.swift in Sources */,
+				FB2C212C1BAC88B4006DDB43 /* AddRecipeVC.swift in Sources */,
 				FB2C21041BAC6784006DDB43 /* AppDelegate.swift in Sources */,
+				FB2C21261BAC8236006DDB43 /* Recipe.swift in Sources */,
 				FB2C210C1BAC6784006DDB43 /* recipez.xcdatamodeld in Sources */,
+				FB2C211C1BAC748E006DDB43 /* RecipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +293,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = recipez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathan.recipez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -263,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = recipez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonathan.recipez;
